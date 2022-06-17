@@ -2070,6 +2070,14 @@ public class airlineReseration extends javax.swing.JFrame {
 
     private void clearBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_clearBtnMouseClicked
         // TODO add your handling code here:
+        lastNametxt_.setText(null);
+        firstNametxt_.setText(null);
+        middleNametxt_.setText(null);
+        
+        costTxt.setText(null);
+        paymentTxt.setText(null);
+        changeTxt.setText(null);
+        
         
         
     }//GEN-LAST:event_clearBtnMouseClicked
