@@ -521,6 +521,11 @@ public class airlineReseration extends javax.swing.JFrame {
         clearBtn.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         clearBtn.setText("CLEAR");
         clearBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        clearBtn.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                clearBtnMouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel11Layout = new javax.swing.GroupLayout(jPanel11);
         jPanel11.setLayout(jPanel11Layout);
@@ -1908,7 +1913,7 @@ public class airlineReseration extends javax.swing.JFrame {
                         case 2:sCPrice=500;break;
                     }
 
-                    totalPrice = sCPrice+(dmiles*5.81);
+                    totalPrice = sCPrice+(dmiles*0.2);
                     costTxt.setText(Double.toString(totalPrice));
                 }
 
@@ -2062,6 +2067,12 @@ public class airlineReseration extends javax.swing.JFrame {
             err1.setVisible(true);
         }
     }//GEN-LAST:event_checkMouseClicked
+
+    private void clearBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_clearBtnMouseClicked
+        // TODO add your handling code here:
+        
+        
+    }//GEN-LAST:event_clearBtnMouseClicked
 
     /**
      * @param args the command line arguments
